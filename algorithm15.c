@@ -16,15 +16,35 @@
 // Fim.
 
 #include <stdio.h>
+#include <math.h>
+#include <string.h>
+#include <locale.h>
 
 int main(void) {
+	setlocale(LC_ALL, "Portuguese");
     float peso, altura, imc;
-    char sit;
-
+    char sit[20];
     printf("Digite o peso: ");
     scanf("%f", &peso);
     printf("Digite aqui a altura: ");
     scanf("%f", &altura);
+
+    imc = peso / pow(altura, 2);
+    if (imc < 18,5){
+        strcpy(sit, "Abaixo do peso.");
+    } else if (imc < 25){
+        strcpy(sit, "Normal.");
+    } else if (imc < 30){
+        strcpy(sit, "Acima do peso.");
+    } else if (imc < 35){
+        strcpy(sit, "Obesidade");
+    } else if (imc < 40){
+        strcpy(sit, "Obesidade severa.");
+    } else {
+        strcpy(sit, "Obesidade m�rbida");
+    }
+    
+    printf(sit);
 
     return 0;
 }
