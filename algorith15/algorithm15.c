@@ -23,7 +23,7 @@
 int main(void) {
 	setlocale(LC_ALL, "Portuguese");
     float peso, altura, imc;
-    char sit[20];
+    char sit[19];
     printf("Digite o peso: ");
     scanf("%f", &peso);
     printf("Digite aqui a altura: ");
@@ -41,7 +41,7 @@ int main(void) {
     } else if (imc < 40){
         strcpy(sit, "Obesidade severa.");
     } else {
-        strcpy(sit, "Obesidade m�rbida");
+        strcpy(sit, "Obesidade mórbida");
     }
     
     printf(sit);
