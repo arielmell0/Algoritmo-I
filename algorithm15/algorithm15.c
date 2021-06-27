@@ -30,7 +30,7 @@ int main(void) {
     scanf("%f", &altura);
 
     imc = peso / pow(altura, 2);
-    if (imc < 18,5){
+    if (imc < 18.5){
         strcpy(sit, "Abaixo do peso.");
     } else if (imc < 25){
         strcpy(sit, "Normal.");
