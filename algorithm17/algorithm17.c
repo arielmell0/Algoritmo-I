@@ -20,8 +20,11 @@
 int main(){
     setlocale(LC_ALL, "Portuguese");
     int n1, n2, n3, n4, menor;
-    printf("Digite 4 números inteiros: ");
-    scanf("%i", n1, n2, n3, n4);
+    printf("Digite 4 números inteiros: \n");
+    scanf("%i", &n1);
+    scanf("%i", &n2);
+    scanf("%i", &n3);
+    scanf("%i", &n4);
 
     if(n1 < n2 && n1 < n3 && n1 < n4){
         menor = n1;
@@ -33,7 +36,7 @@ int main(){
         menor = n4;
     }
 
-    printf("O menor é: ", menor);
+    printf("\nO menor é: %i", menor);
 
     return 0;
 }
