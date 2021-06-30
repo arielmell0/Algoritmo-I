@@ -24,36 +24,36 @@ int main(){
     setlocale(LC_ALL, "Portuguese");
     
     float n1, n2, n3, n4, faltas; 
-    float aulasDadas = 70;
+    float aulasDadas = 70;  
+    float media, frequencia;
     float nExame = 0;
-    float media = (n1 + 2*n2 + 5*n3 + 2*n4)/10;
-    float frequencia = (aulasDadas-faltas)/aulasDadas*100.0;
     char nome[20], sit[20];
 
     printf("Nome: "); scanf("%s", &nome);
     printf("Faltas: "); scanf("%f", &faltas);
-    printf("Digite a 1Â° nota: "); scanf("%f", &n1);
-    printf("Digite a 2Â° nota: "); scanf("%f", &n2);
-    printf("Digite a 3Â° nota: "); scanf("%f", &n3);
-    printf("Digite a 4Â° nota: "); scanf("%f", &n4);
+    printf("Digite a 1° nota: "); scanf("%f", &n1);
+    printf("Digite a 2° nota: "); scanf("%f", &n2);
+    printf("Digite a 3° nota: "); scanf("%f", &n3);
+    printf("Digite a 4° nota: "); scanf("%f", &n4);
+    
+    media = (n1 + 2*n2 + 5*n3 + 2*n4)/10;
+    frequencia = (aulasDadas-faltas)*100.0/aulasDadas;
     
     if(media >= 7 && frequencia >= 75){
         strcpy(sit, "Aprovado");
-    } else if (media < 1,7 || frequencia < 75){
+    } else if (media < 1.7 || frequencia < 75){
         strcpy(sit, "Reprovado");
     } else {
         nExame = (50-6*media)/4;
-        strcpy(sit, "Em exame por: ");  
+        strcpy(sit, "Em exame por: ");
     }
 
     printf("-----------------------\n");
     printf("Nome: %s\n", nome);
-    printf("MÃ©dia: %.2f\n", media);
-    printf("FrequÃªncia: %.2f\n", frequencia);
-    printf("SituaÃ§Ã£o: %s\n", sit);
-    if(nExame > 0){
-        printf("Nota do exame: %f\n", nExame);
-    }
-
+    printf("Média: %.2f\n", media);
+    printf("Frequência: %.2f\n", frequencia);
+    printf("Situação: %s", sit);
+    if(nExame > 0) printf("%.2f", nExame);
+    
     return 0;
 }
