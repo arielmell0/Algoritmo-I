@@ -17,12 +17,12 @@ int main(){
     do{
         printf("-----------------------------------------\n");
         printf("1: Soma\n");
-        printf("2: Subtra√ß√£o\n");
-        printf("3: Multiplica√ß√£o\n");
-        printf("4: Divis√£o\n");
-        printf("5: Resto da divis√£o\n");
+        printf("2: SubtraÁ„o\n");
+        printf("3: MultiplicaÁ„o\n");
+        printf("4: Divis„o\n");
+        printf("5: Resto da divis„o\n");
         printf("-----------------------------------------\n");
-        printf("Digite o n√∫mero da opera√ß√£o que deseja realizar: ");
+        printf("Digite o n˙mero da operaÁ„o que deseja realizar: ");
         scanf("%i", &operacao); 
         printf("Digite o primeiro valor: ");
         scanf("%f", &valorA);
@@ -60,7 +60,7 @@ int main(){
             break;
         }
 
-        printf("Digite 0 para repetir a opera√ß√£o: ");
+        printf("Digite 0 para repetir a operaÁ„o: ");
         scanf("%i", &exit);
     } while (exit == 0);
 

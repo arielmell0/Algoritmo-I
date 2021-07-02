@@ -37,11 +37,11 @@ int main(void) {
     } else if (imc < 30){
         strcpy(sit, "Acima do peso.");
     } else if (imc < 35){
-        strcpy(sit, "Obesidade");
+        strcpy(sit, "Obesidade.");
     } else if (imc < 40){
         strcpy(sit, "Obesidade severa.");
     } else {
-        strcpy(sit, "Obesidade mÃ³rbida");
+        strcpy(sit, "Obesidade mórbida.");
     }
     
     printf(sit);

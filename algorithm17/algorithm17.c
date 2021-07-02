@@ -20,7 +20,7 @@
 int main(){
     setlocale(LC_ALL, "Portuguese");
     int n1, n2, n3, n4, menor;
-    printf("Digite 4 nÃºmeros inteiros: \n");
+    printf("Digite 4 números inteiros: \n");
     scanf("%i", &n1);
     scanf("%i", &n2);
     scanf("%i", &n3);
@@ -36,7 +36,7 @@ int main(){
         menor = n4;
     }
 
-    printf("\nO menor Ã©: %i", menor);
+    printf("\nO menor é: %i", menor);
 
     return 0;
 }

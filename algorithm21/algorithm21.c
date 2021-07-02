@@ -35,7 +35,7 @@ int main(){
 	char nome[20];
 	
 	do { 
-		printf("Digite um nï¿½mero inteiro: "); scanf("%i", &dia);
+		printf("Digite um número inteiro: "); scanf("%i", &dia);
 		
 		switch(dia){
 			case 1:
@@ -47,7 +47,7 @@ int main(){
 			break;
 			
 			case 3: 
-				printf("Terï¿½a");
+				printf("Terça");
 			break;
 			
 			case 4:
@@ -63,15 +63,15 @@ int main(){
 			break;
 				
 			case 7:
-				printf("Sabï¿½do");
+				printf("Sábado");
 			break;
 			
 			default:
-				printf("Valor invï¿½lido!");
+				printf("Valor inválido!");
 			break;
 		}
 		
-		printf("\nDigite 0 para repetir a operaï¿½ï¿½o: "); scanf("%i", &fim);
+		printf("\nDigite 0 para repetir a operação: "); scanf("%i", &fim);
 		printf("-------------\n\n");	
 			
 	} while(fim == 0);
