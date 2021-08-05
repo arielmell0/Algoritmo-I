@@ -16,14 +16,15 @@ int main() {
     fibonacci[0] = 0; 
     fibonacci[1] = 1;
 
-    for(int i = 2; i <= lenght; i++){
+    int i;
+
+    for(i = 2; i <= lenght; i++){
         fibonacci[i] = fibonacci[i - 2] + fibonacci[i--];
     }
 
-    for(int i = lenght - 1; i == 0; i--) {
+    for(i = lenght - 1; i >= 0; i--) {
         printf("%i", fibonacci[i]);
     }
-
 
     return 0;
 }
