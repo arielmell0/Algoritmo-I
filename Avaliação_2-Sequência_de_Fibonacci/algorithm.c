@@ -12,16 +12,19 @@ int main() {
 
     int fibonacci[10];
     int lenght = sizeof(fibonacci)/sizeof(fibonacci[0]);
+
+    fibonacci[0] = 0; 
+    fibonacci[1] = 1;
+
     int i;
 
-    // Valores padrões de fibonacci
-    fibonacci[0] = 0, fibonacci[1] = 1;
-
-    for(i = 2; i < lenght; i++) {
-        fibonacci[i] = fibonacci[i - 2] + fibonacci [i - 1];
+    for(i = 2; i <= lenght; i++){
+        fibonacci[i] = fibonacci[i - 2] + fibonacci[i--];
     }
 
     for(i = lenght - 1; i >= 0; i--) {
-        printf("%i\n", fibonacci[i]);
+        printf("%i", fibonacci[i]);
     }
+
+    return 0;
 }
