@@ -17,10 +17,12 @@ int main() {
     // Valores padrões de fibonacci
     fibonacci[0] = 0, fibonacci[1] = 1;
 
+    //loop para armazenar os valores de fibonacci
     for(i = 2; i < lenght; i++) {
         fibonacci[i] = fibonacci[i - 2] + fibonacci [i - 1];
     }
 
+    //loop para imprimir os valores 
     for(i = lenght - 1; i >= 0; i--) {
         printf("%i\n", fibonacci[i]);
     }
